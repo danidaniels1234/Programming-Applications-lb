@@ -27,7 +27,7 @@ class Number
             int iCnt = 0;
             int iSum = 0;
 
-            for(iCnt = 1; iCnt <= ((this->iNo) / 2) && (iSum < this->iNo); iCnt++)
+            for(iCnt = 1; iCnt <= ((this->iNo) / 2) && (iSum <= this->iNo); iCnt++)
             {
                 if(this->iNo % iCnt == 0)
                 {
