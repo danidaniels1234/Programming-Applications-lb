@@ -1,3 +1,5 @@
+// Calculate Factorial
+
 #include<iostream>
 using namespace std;
 
@@ -29,7 +31,6 @@ class Number
             }
             return iFact;
         }
-
 };
 
 int main()
