@@ -150,6 +150,7 @@ void DeleteLast(PPNODE head)
            free(temp->next);
            temp->next = NULL;
     }
+
 }
 
 void InsertAtPos(PPNODE head, int no, int pos)
@@ -199,6 +200,7 @@ void InsertAtPos(PPNODE head, int no, int pos)
         newn -> next = temp -> next;
         temp->next = newn;
     }
+
 }
 
 void DeleteAtPos(PPNODE head, int pos)
@@ -242,6 +244,7 @@ void DeleteAtPos(PPNODE head, int pos)
         temp->next = temp->next->next;
         free(tempdelete);
     }
+
 }
 
 
@@ -292,10 +295,6 @@ int main()
 
     iRet = Count(first);
     printf("Number of nodes are  : %d\n",iRet);
-
-
-
-
 
     return 0;
 }

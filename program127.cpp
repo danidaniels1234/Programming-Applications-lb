@@ -1,48 +1,73 @@
-// Calculate Factorial
+//  perfect number
 
 #include<iostream>
 using namespace std;
 
 class Number
 {
-    private :
+    private:
         int iNo;
 
-    public :
+    public:
 
         void Accept()
         {
-            cout << "Enter the value" << endl;
+
+            cout << "Enter the Number : " << endl;
             cin >> this->iNo;
         }
 
         void Display()
         {
-            cout << "value is: " << this->iNo << endl;
+            cout << "Value is : " << this->iNo << endl;
         }
 
-        int Factor()
+        bool CheckPerfect()
         {
-            int iFact = 1;
             int iCnt = 0;
-            for(iCnt = 1; iCnt <= iNo; iCnt++)
+            int iSum = 0;
+
+            for(iCnt = 1; iCnt <= ((this->iNo) / 2) && (iSum <= this->iNo); iCnt++)
             {
-                iFact *= iCnt;
+                if(this->iNo % iCnt == 0)
+                {
+                    iSum += iCnt;
+                }
+
             }
-            return iFact;
+
+            if(iSum == this->iNo)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 };
 
 int main()
 {
-    Number nobj;
-    int iRet = 0;
+    bool bRet = false;
 
-    nobj.Accept();
-    nobj.Display();
+    Number obj;
 
-    iRet = nobj.Factor();
-    cout << "Factorial is : " << iRet << endl;
+    obj.Accept();
+    obj.Display();
+    
+    bRet = obj.CheckPerfect();
+
+    if(bRet == true)
+    {
+        cout << "It is a Perfect Number" << endl;
+    }
+    else
+    {
+        cout << "It is not a Perfect Number" << endl;
+    }
+
 
     return 0;
 }
