@@ -38,7 +38,7 @@ class Pattern
 
 };
 
-class program135
+class program125
 {
     public static void main(String arg[])
     {

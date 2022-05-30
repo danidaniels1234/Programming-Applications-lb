@@ -32,7 +32,7 @@ class Number
 
 }
 
-class program130
+class program120
 {
     public static void main(String arg[])
     {

@@ -23,7 +23,7 @@ class ArrayXX extends ArrayX
 
 }
 
-public class program136
+public class program126
 {
     public static void main(String arg[])
     {

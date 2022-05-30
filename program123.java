@@ -51,7 +51,7 @@ class ArrayX
     }
 }
 
-class program133
+class program123
 {
     public static void main(String arg[])
     {

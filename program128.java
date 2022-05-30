@@ -47,7 +47,7 @@ class Number
 
 }
 
-class program138
+class program128
 {
     public static void main(String arg[])
     {
