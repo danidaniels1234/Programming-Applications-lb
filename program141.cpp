@@ -9,11 +9,16 @@ class Numbers
         int iNo;
 
     public:
-        void Accept()
+        void Accept()       // setter
         {
             cout << "Enter Number : " << endl;
             cin >> this->iNo;
         } 
+
+        void Display()      // getter
+        {
+            cout << "Value is : " << this->iNo << endl;
+        }
 
         bool Armstrong()
         {
@@ -67,6 +72,7 @@ int main()
     Numbers obj;
     
     obj.Accept();
+    obj.Display();
     bool bRet = obj.Armstrong();
 
     if(bRet == true)

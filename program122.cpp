@@ -25,7 +25,7 @@ class ArrayX
 
             cout << "Enter the Elements: " << endl;
             
-            for(iCnt = 0; iCnt < iSize; iCnt++)
+            for(iCnt = 0; iCnt < this->iSize; iCnt++)
             {
                 cin >> Arr[iCnt];
             }
@@ -37,7 +37,7 @@ class ArrayX
 
             cout << "Elements of array are" << endl;
 
-            for(iCnt = 0; iCnt < iSize; iCnt++)
+            for(iCnt = 0; iCnt < this->iSize; iCnt++)
             {
                 cout << Arr[iCnt] << endl;
             }
@@ -48,7 +48,7 @@ class ArrayX
             int iCnt = 0;
             int iSum = 0;
 
-            for(iCnt = 0; iCnt < iSize; iCnt++)
+            for(iCnt = 0; iCnt < this->iSize; iCnt++)
             {
                 iSum = iSum + Arr[iCnt];
             }

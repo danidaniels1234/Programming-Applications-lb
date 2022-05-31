@@ -18,15 +18,46 @@ class ArrayX
 
         void Accept()
         {
-            cout << "Enter Numbers : " << endl;
+            int iCnt = 0;
 
-            for(in)
-
+            cout << "Enter Elements : " << endl;
+            
+            for(iCnt = 0; iCnt < this->iSize; iCnt++)
+            {
+                cin >> Arr[iCnt];
+            }
         }
 
-}
+        void DisplayNumbers()
+        {
+            int iCnt = 0;
+            cout << "Numbers divisible by 3 & 5 are : " << endl;
+            
+            for(iCnt = 0; iCnt < this->iSize; iCnt++)
+            {
+                if((Arr[iCnt] % 3 == 0) && (Arr[iCnt] % 5 == 0))
+                {
+                    cout << Arr[iCnt] << "  ";
+
+                }
+            }
+
+            cout << endl;
+
+        }
+};
 
 int main()
 {
+    int iValue = 0;
 
+    cout << "Enter n Number : " << endl;
+    cin >> iValue;
+
+    ArrayX obj(iValue);
+    
+    obj.Accept();
+    obj.DisplayNumbers();
+
+    return 0;
 }
