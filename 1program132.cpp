@@ -1,5 +1,24 @@
 // Singly Circular Linked List CUI APPLICATION
-
+/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 #include<iostream>
 using namespace std;
 
